@@ -25,7 +25,7 @@ def load_chain():
     embeddings = HuggingFaceEmbeddings(model_name="all-MiniLM-L6-v2")
     vectorstore = FAISS.load_local("faiss_index", embeddings, allow_dangerous_deserialization=True)
     
-    # THIS LINE FIXES THE ERROR — reads key from Secrets
+    #  reads key from Secrets
     llm = ChatGroq(
         model_name="llama-3.3-70b-versatile",
         temperature=0,
@@ -37,7 +37,7 @@ def load_chain():
 
 qa = load_chain()
 
-# Rest of your beautiful UI
+# l UI
 with st.sidebar:
     st.header("Quick Charts")
     if st.button("Monthly Sales Trend"):
