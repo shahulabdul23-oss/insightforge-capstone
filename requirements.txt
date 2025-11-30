@@ -1,0 +1,10 @@
+"""
+streamlit
+pandas
+plotly
+langchain==0.1.20
+langchain-community==0.0.40
+langchain-groq==0.1.1
+faiss-cpu
+sentence-transformers
+"""
